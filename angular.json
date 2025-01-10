@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/johndoe.css"
             ],
             "scripts": [
               "src/assets/vendors/jquery/jquery-3.4.1.js",
@@ -91,7 +92,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/johndoe.css"
             ],
             "scripts": [
               "src/assets/vendors/jquery/jquery-3.4.1.js",
@@ -101,6 +103,9 @@
               "src/assets/js/johndoe.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
