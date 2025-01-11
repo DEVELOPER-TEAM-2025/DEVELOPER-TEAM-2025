@@ -15,6 +15,15 @@
             </div>
         </div>
     </header>
+    <div *ngIf="showPopup" class="popup">
+        <div class="popup-content">
+          <h2>¡Bienvenido!</h2>
+          <p>Esta pagina fue desarrollada en Angular.</p>
+          <img width="200px" src="../assets/imgs/a+t.png" alt="Angular + TypeScript">
+          <button class="button-pop" (click)="closePopup()">X</button>
+        </div>
+      </div>
+      
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +45,7 @@
                     <img style="left:60%; height: 170px;" src="assets/imgs/S3.JPG" alt="" class="brand-img">
                     <img style="left:40%; height: 170px;" src="assets/imgs/M.JPG" alt="" class="brand-img">
                     <li class="brand-txt">
-                        <h4 class="brand-title">Discover our skills</h4>
+                        <h4 class="brand-title"></h4>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
