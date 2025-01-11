@@ -16,9 +16,7 @@ export class AppComponent {
   ngOnInit() {
     // Verificar si el pop-up ya fue mostrado
     const popupClosed = localStorage.getItem('popupClosed');
-    if (!popupClosed) {
       this.showPopup = true; // Mostrar el pop-up si no hay registro en localStorage
-    }
   }
 
   closePopup() {

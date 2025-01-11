@@ -1,4 +1,5 @@
 .popup {
+    z-index: 1025 !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
   }
   
   .popup-content {
@@ -23,17 +23,29 @@
     justify-content: center;
   }
   
-  .button-pop {
+  /* Botón estilizado con efecto 3D y luminoso */
+  .popup-button {
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ff0000;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
     color: white;
+    background: linear-gradient(145deg, #333, #111);
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), inset 0 -2px 5px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
   }
   
-  .button-pop:hover {
-    background-color: #000000;
+  .popup-button:hover {
+    background: linear-gradient(145deg, #111, #333);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6), 0 0 10px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  .popup-button:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.7);
+    transform: translateY(2px);
   }
   

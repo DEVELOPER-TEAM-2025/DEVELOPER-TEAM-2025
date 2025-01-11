@@ -7211,7 +7211,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background: linear-gradient(145deg, #333, #111);
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -11066,6 +11066,7 @@ p {
 
 .card {
   margin-bottom: 30px;
+  border-radius: 20px;
 }
 
 .card .card-header {
@@ -11278,6 +11279,7 @@ p {
   margin-bottom: 30px;
   overflow: hidden;
   margin: 0 15px 30px;
+  border-radius: 20px;
 }
 
 .blog-card .img-holder {
@@ -11656,6 +11658,7 @@ pre .code {
 
 .contact .contact-info-card {
   padding-right: 20px;
+  border-radius: 20px;
 }
 
 .contact .contact-title {
